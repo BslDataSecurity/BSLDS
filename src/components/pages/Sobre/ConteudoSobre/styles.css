@@ -1,0 +1,17 @@
+.secaoConteudo {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 100px auto;
+}
+
+.secaoConteudo h2 {
+    color: #141A46;
+    font-size: 25px;
+}
+
+.secaoConteudo .boxconteudo {
+    padding: 5px 15px;
+}

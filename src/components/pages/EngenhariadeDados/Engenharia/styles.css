@@ -1,0 +1,75 @@
+.engenharia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    margin: 100px auto 0 auto;
+}
+
+.engenharia .cardenge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .engenharia .cardenge {
+        flex-wrap: wrap;
+    }
+}
+
+.engenharia .cardenge .boximg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.engenharia .cardenge .boxinfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px #e2e2e2;
+}
+
+.engenharia .cardenge .boxinfo .faleconosco {
+    text-decoration: none;
+    background-color: #141A46;
+    color: #e2e2e2;
+    text-align: center;
+    padding-top: 6px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.boxenge {
+    margin-top: 20px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxenge h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.boxenge .cards {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+} 
+
+.boxenge .cards .cardeng {
+    height: 400px;
+    width: 300px;
+}

@@ -1,0 +1,67 @@
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.endereco {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.endereco h4 {
+    font-size: 20px;
+}
+
+.endereco a {
+    color: black;
+    font-weight: normal;
+}
+
+.endereco p {
+    color: #686363;
+}
+
+.sigaNos {
+    background-color: #DEDEDE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sigaNos .politica {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.politica span {
+    margin-left: 15px;
+    text-decoration: underline;
+    color: #686363;
+}
+
+.sigaNos .Boxicone {
+    width: 120px;
+    padding: 0 15px 0 0;
+    display: flex;
+}
+
+.sigaNos .Boxicone .cardimg {
+    width: 50%;
+    margin-right: -4px;
+}
+
+.sigaNos .Boxicone .icone {
+    height: 30px;
+    width: 100%;
+    color: #0A66C2;
+}
+
+.sigaNos .Boxicone .insta {
+    height: 33px;
+    width: 30px;
+    color: #0A66C2;
+}

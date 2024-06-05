@@ -1,0 +1,28 @@
+.boxsolucoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxsolucoes .boximg {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.boxsolucoes .boximg span {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #141A46;
+}
+
+.boxsolucoes h5 {
+    color: #141A46;
+    text-align: center;
+}

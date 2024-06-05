@@ -1,0 +1,49 @@
+.fundo_experiencia {
+    background-color: #F9F9F9;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.experiencia {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex;
+    justify-content: center;
+    box-shadow: 0 0 10px 3px rgb(228, 223, 223);
+    border-radius: 8px;
+}
+
+.experiencia h3 {
+    margin-top: 50px;
+    color: #EC8B5E;
+    padding: 0 50px;
+    font-size: 30px;
+}
+
+.experiencia p {
+    font-size: 18px;
+    padding: 0 50px;
+    font-weight: normal;
+}
+
+.container-sobre {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 1024px;
+    box-shadow: 0 0 5px 5px #dad6d6;
+}
+
+.container-sobre .acordion {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container-sobre .acordion .caixa-acordion {
+    border-radius: 20px;
+}
