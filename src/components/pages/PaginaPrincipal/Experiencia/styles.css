@@ -8,7 +8,7 @@
 
 .experiencia {
     width: 100%;
-    max-width: 500px;
+    max-width: 1024px;
     margin: 50px auto 60px auto;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,13 @@
     margin-top: 50px;
     color: #EC8B5E;
     padding: 0 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .experiencia p {
     font-size: 18px;
     padding: 0 50px;
+    font-size: 16px;
     font-weight: normal;
 }
 

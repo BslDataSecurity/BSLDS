@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Link } from 'react-router-dom'
 import { FaLinkedin } from "react-icons/fa";
 import "./styles.css"
@@ -8,6 +8,12 @@ import { useTranslation } from "react-i18next"
 export default function Footer() {
 
     const { t } = useTranslation();
+
+    const [modal, setModal] = useState(false)
+
+    const clikaModel = () => {
+        setModal(!modal)
+    }
 
     return (
         <section className="footer">
@@ -30,6 +36,10 @@ export default function Footer() {
                         <img className='insta' src="assets/insta.png" alt="" />
                     </Link>
                 </div>
+            </div>
+
+            <div className="desenvolvido">
+                <p>{t("Desenvolvido por ")}<Link className='nome' to='https://api.whatsapp.com/send?phone=5527998673933'>Kayro Rocha</Link></p>
             </div>
         </section>
     )

@@ -36,19 +36,20 @@ export const Container = styled.nav<MenuProps>`
     font-weight: 700;
     text-decoration: none;
     align-items: center;
-
   }
 
   .botoes {
     padding-left: 10px;
+    display: flex;
   }
 
   .botao {
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: 20px;
     border: 0;
     padding: 0;
     cursor: pointer;
+    display: flex;
   }
 
   .en {
@@ -57,7 +58,7 @@ export const Container = styled.nav<MenuProps>`
 
   .botao img {
     width: 100%;
-    height: 4vh;
+    height: 100%;
   }
 
   .box-img {
@@ -66,6 +67,7 @@ export const Container = styled.nav<MenuProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 8px;
   }
 
   .box-img .logo {
@@ -79,8 +81,6 @@ export const Container = styled.nav<MenuProps>`
     display: flex;
   }
 
-
-
   @media(max-width: 5000px) {
     justify-content: space-between;
     border-radius: 0;
@@ -91,19 +91,20 @@ export const Container = styled.nav<MenuProps>`
       position: absolute;
       top: 0px;
       right: 0px;
-      padding-left: 0px;
-      width: 50%;
-      height: 100vh;
-      background-color: #fff;
+      width: 35%;
+      height: 105vh;
+      background: linear-gradient(90deg, #00213A 0%, #003D4A 35%, #011B34 100%);
       z-index:9999;
       justify-content: top;
       align-items: center;
-      padding: 30px 10px;
+      text-align: center;
+      padding: 40px 10px;
     }
 
     .links-navbar {
-      color: black;
+      color: #fff;
       position: relative;
+      font-size: 15px;
     }
 
     .links-navbar::after {
@@ -138,6 +139,6 @@ export const ContentMobile = styled.div`
 
   @media(max-width: 5000px) {
     display: flex;
-    padding: 25px
+    padding: 25px;
   }
 `

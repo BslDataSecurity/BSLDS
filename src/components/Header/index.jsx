@@ -44,11 +44,13 @@ export default function Header() {
     return (
         <Container>
             <ContentMobile onClick={toggleMenu}>
-                {menuOpen ? <IoCloseSharp className="botao_nav" color="black" /> : <TiThMenu className="botao_nav" color="white" />}
+                {menuOpen ? <IoCloseSharp className="botao_nav" color="#FFF" /> : <TiThMenu className="botao_nav" color="white" />}
             </ContentMobile>
 
             <div className="box-img">
-                <img className="logo" src="assets/capasemfundo.png" alt="" />
+                <Link to='/'>
+                    <img className="logo" src="assets/capasemfundo.png" alt="" />
+                </Link>
             </div>
 
             <div className="botoes">
@@ -65,11 +67,12 @@ export default function Header() {
 
             {menuOpen || window.innerWidth > 5000 ? <nav>
                 <Link className="links-navbar marge" to='/'>Home</Link>
+                <Link className="links-navbar" to='/engenharia-de-dados'>{t('Engenharia de Dados')}</Link>
                 <Link className="links-navbar" to='/data-security'>{t('Segurança de dados')}</Link>
                 <Link className="links-navbar" to='/banco-de-dados'>{t("Banco de Dados")}</Link>
-                <Link className="links-navbar" to='/engenharia-de-dados'>{t('Engenharia de Dados')}</Link>
-                <Link className="links-navbar" to='/fale-conosco'>{t('Fale Conosco')}</Link>
                 <Link className="links-navbar" to='/sobre'>{t('Sobre')}</Link>
+                <Link className="links-navbar" to='/certificado'>{t('Certificados')}</Link>
+                <Link className="links-navbar" to='/fale-conosco'>{t('Fale Conosco')}</Link>
             </nav> : <></>}
         </Container>
     )

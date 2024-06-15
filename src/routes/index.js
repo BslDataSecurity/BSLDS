@@ -6,6 +6,7 @@ import DataSecurity from "../components/pages/DataSecurity";
 import PaginaBanco from "../components/pages/BancodeDados";
 import PaginaEngenharia from "../components/pages/EngenhariadeDados";
 import PaginaContato from "../components/pages/FaleConosco";
+import Certificado from "../components/pages/Certificados";
 import Sobre from "../components/pages/Sobre";
 
 const Rotas = () => {
@@ -17,6 +18,7 @@ const Rotas = () => {
                 <Route path="/banco-de-dados" element={<PaginaBanco />} />
                 <Route path="/engenharia-de-dados" element={<PaginaEngenharia />} />
                 <Route path="/fale-conosco" element={<PaginaContato />} />
+                <Route path="/certificado" element={<Certificado />} />
                 <Route path="/sobre" element={<Sobre />} />
             </Routes>
         </BrowserRouter>

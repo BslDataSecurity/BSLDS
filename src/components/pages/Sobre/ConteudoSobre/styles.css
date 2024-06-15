@@ -9,7 +9,11 @@
 
 .secaoConteudo h2 {
     color: #141A46;
-    font-size: 25px;
+}
+
+.secaoConteudo h5 {
+    color: #141A46;
+    font-weight: bold;
 }
 
 .secaoConteudo .boxconteudo {

@@ -1,0 +1,36 @@
+.certificacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    margin: 100px auto 0 auto;
+}
+
+
+.certificado {
+    margin-top: 20px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificado h3 {
+    text-align: center;
+}
+
+
+.certificacao .cardscertificado {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.certificacao .cardscertificado .card {
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+}
+

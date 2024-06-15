@@ -9,11 +9,6 @@ import { FaEye } from "react-icons/fa";
 import { FaGears } from "react-icons/fa6";
 import { IoSpeedometerOutline } from "react-icons/io5";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
-import { EffectCards } from 'swiper/modules';
-
 import "./styles.css"
 
 export default function Solucao() {
@@ -42,26 +37,23 @@ export default function Solucao() {
                 <p>{t('Nossa equipe de Segurança de Dados está aqui para garantir que seus dados importantes estejam sempre protegidos. Nós cuidamos de tudo, desde identificar e classificar seus dados até monitorar quem tem acesso a eles, tudo para manter suas informações seguras. Usamos análises avançadas para identificar possíveis vulnerabilidades, proporcionando a você a visibilidade necessária por meio de um painel de controle intuitivo e fácil de usar. Nosso compromisso é assegurar que sua empresa esteja em conformidade com os mais rigorosos padrões de segurança, ao mesmo tempo em que automatizamos processos, reduzimos custos e implementamos políticas que garantam um ambiente seguro e confiável para todos.')}</p>
             </div>
 
+
             <div className="cardsolucao">
-                <Swiper
-                    effect={'cards'}
-                    grabCursor={true}
-                    modules={[EffectCards]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <ItemSolucao img={<FaSearch />} texto={t("Automatização e Classificação de Dados")} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ItemSolucao img={<FaEye />} texto={t("Monitoramento de Atividades e Proteção de Dados" )}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ItemSolucao img={<FaGears />} texto={t("Aceleração da Conformidade de Dados")} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ItemSolucao img={<IoSpeedometerOutline />} texto={t("Análise de Risco e Priorização de Investigações")}/>
-                    </SwiperSlide>
-                </Swiper>
+                <div className="card">
+                    <ItemSolucao img={<FaSearch color="#fff" />} texto={t("Automatização e Classificação de Dados")} />
+                </div>
+
+                <div className="card">
+                    <ItemSolucao img={<FaEye color="#fff"/>} texto={t("Monitoramento de Atividades e Proteção de Dados")} />
+                </div>
+
+                <div className="card">
+                    <ItemSolucao img={<FaGears color="#fff" />} texto={t("Aceleração da Conformidade de Dados")} />
+                </div>
+
+                <div className="card">
+                    <ItemSolucao img={<IoSpeedometerOutline color="#fff" />} texto={t("Análise de Risco e Priorização de Investigações")} />
+                </div>
             </div>
         </section>
     )
