@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import PaginaHome from "../components/pages/PaginaPrincipal";
 import DataSecurity from "../components/pages/DataSecurity";
@@ -11,7 +11,7 @@ import Sobre from "../components/pages/Sobre";
 
 const Rotas = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route exact path="/" element={<PaginaHome />} />
                 <Route path="/data-security" element={<DataSecurity />} />
@@ -21,7 +21,7 @@ const Rotas = () => {
                 <Route path="/certificado" element={<Certificado />} />
                 <Route path="/sobre" element={<Sobre />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
