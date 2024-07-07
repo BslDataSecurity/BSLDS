@@ -1,7 +1,7 @@
 {
+  "homepage": "https://BslDataSecurity.github.io/BSLDS",
   "name": "data_security",
   "version": "0.1.0",
-  "homepage": "https://BslDataSecurity.github.io/BSLDS",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
