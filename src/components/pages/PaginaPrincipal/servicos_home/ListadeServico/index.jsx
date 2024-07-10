@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import ItemListaServico from '../ItemLista';
 import "./styles.css"
 import "../../../../../utils/i18n"
@@ -20,20 +21,27 @@ export default function ListaServico() {
 
 
             <div className='cards'>
-                <div className="card">
-                    <ItemListaServico className="img"
-                        paragrafo={t("Oferecemos proteção adaptada às necessidades exclusivas da sua empresa, garantindo eficiência e redução de riscos")} titulo={t("Segurança de dados")} imagem="assets/cyber-security-data.jpg" />
-                </div>
 
-                <div className="card">
-                    <ItemListaServico className="img"
-                        paragrafo={t("Nossa equipe de especialistas em engenharia de dados oferece soluções personalizadas focadas em qualidade, segurança e eficiência. Projetamos e implementamos pipelines de dados que garantem a integridade, disponibilidade e confidencialidade das suas informações.")} titulo={t("Engenharia de Dados")} imagem="assets/homemfuturo.jpg" />
-                </div>
+                <Link className='link' to='/data-security'>
+                    <div className="card">
+                        <ItemListaServico className="img"
+                            paragrafo={t("Oferecemos proteção adaptada às necessidades exclusivas da sua empresa, garantindo eficiência e redução de riscos")} titulo={t("Segurança de dados")} imagem="assets/cyber-security-data.jpg" />
+                    </div>
+                </Link>
 
-                <div className="card">
-                    <ItemListaServico className="img"
-                        paragrafo={t("Desbloqueie todo o potencial dos seus dados e conquiste o sucesso que sua empresa merece!")} titulo={t("Banco de Dados")} imagem="assets/highly.jpg" />
-                </div>
+                <Link className='link' to='/engenharia-de-dados'>
+                    <div className="card">
+                        <ItemListaServico className="img"
+                            paragrafo={t("Nossa equipe de especialistas em engenharia de dados oferece soluções personalizadas focadas em qualidade, segurança e eficiência. Projetamos e implementamos pipelines de dados que garantem a integridade, disponibilidade e confidencialidade das suas informações.")} titulo={t("Engenharia de Dados")} imagem="assets/homemfuturo.jpg" />
+                    </div>
+                </Link>
+
+                <Link className='link' to='/banco-de-dados'>
+                    <div className="card">
+                        <ItemListaServico className="img"
+                            paragrafo={t("Desbloqueie todo o potencial dos seus dados e conquiste o sucesso que sua empresa merece!")} titulo={t("Banco de Dados")} imagem="assets/highly.jpg" />
+                    </div>
+                </Link>
             </div>
         </section>
     )

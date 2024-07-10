@@ -54,6 +54,10 @@
     text-align: center;
 }
 
+.link {
+    text-decoration: none;
+}
+
 @media screen and (max-width:900px) {
     .secaoServicos {
         margin-top: 100px;
